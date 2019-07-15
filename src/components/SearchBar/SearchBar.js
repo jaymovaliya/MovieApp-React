@@ -28,7 +28,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="searchBar">
         <input className="appInput" type="text" placeholder="Enter Mobie name here" onChange={this.handleInputChange} value={this.state.moviename}></input>
         <button onClick={this.getData.bind(this)}>Search</button>
         <MovieResult moviedata={this.state.movieData}></MovieResult>

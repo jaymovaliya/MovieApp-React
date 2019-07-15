@@ -1,0 +1,30 @@
+.content-section {
+  flex: 3;
+}
+
+.movie-content {
+  width: 500px;
+  margin: 0 auto;
+  .movie-info {
+    display: flex;
+    .movie-info-label {
+      flex: 1;
+      text-align: left;
+      font-weight: bold;
+    }
+    .movie-info-data {
+      flex: 1;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}

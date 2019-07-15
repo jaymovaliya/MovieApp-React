@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+  .sidebar-nav {
+    flex: 1;
+  }
+  .searchBar {
+    flex: 4;
+    background: #ccc;
+    height: 100vh;
+  }
+}
