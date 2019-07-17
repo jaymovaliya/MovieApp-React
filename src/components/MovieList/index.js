@@ -25,10 +25,12 @@ class MovieList extends Component {
     if (this.state.movieData) {
       console.log(this.state.movieData)
       return (
-        <div className="movie-list">
-          <input className="" type="text" placeholder="Enter Mobie name here" onChange={this.handleInputChange} value={this.state.moviename}></input>
+          <div className="movie-container">
+          <input className="movie-list--search" type="text" placeholder="Enter Mobie name here" onChange={this.handleInputChange} value={this.state.moviename}></input>
           <button onClick={this.getData.bind(this)}>Search</button>
-          <MovieItem moviedata={this.state.movieData}></MovieItem>
+          <div className="movie-list">
+            <MovieItem moviedata={this.state.movieData}></MovieItem>
+          </div>
         </div>
       );
     }

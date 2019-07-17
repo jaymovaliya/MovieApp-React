@@ -3,7 +3,7 @@ import Navigation from '../Navigation/index'
 import MovieList from '../MovieList/index'
 import './Dashboard.scss';
 import data from '../../utils/movieData.json'
-console.log(data)
+// console.log(data)
 class Dashboard extends Component {
 
   render() {
