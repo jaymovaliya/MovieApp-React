@@ -16,11 +16,10 @@ class SingleMovieData extends Component {
     return (
 
       <div className="single-movie">
-        <h1>{this.props.data.Title}</h1>
-        <p>{this.props.data.Year}</p>
         <div className="image-block">
           <img src={this.props.data.Poster} className="image-responsive" />
         </div>
+        <h1>{this.props.data.Title}</h1>
       </div>
     );
   }
