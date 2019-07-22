@@ -1,7 +1,14 @@
+.movie-container {
+  background: #141414;
+  width: 100%;
+  height: 100vh;
+}
+
 .movie-list {
   display: flex;
   flex-wrap: wrap;
   background: #141414;
+  padding: 15px;
 
   .movie-list--search {
     // display: none;
@@ -23,9 +30,11 @@
     color: #fff;
   }
   button {
-    flex: 1;
-    background: #b9090b;
-    border: 2px solid #b9090b;
+    background: #6b0607;
+    border: 2px solid #6b0607;
     color: #fff;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-size: 14px;
   }
 }

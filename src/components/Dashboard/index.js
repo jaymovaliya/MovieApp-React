@@ -7,10 +7,11 @@ import data from '../../utils/movieData.json'
 class Dashboard extends Component {
 
   render() {
+    console.log(this.props, "Dashboard")
     return (
       <div className="movie-data">
           <Navigation></Navigation>
-          <MovieList></MovieList>
+          <MovieList history={this.props.history}></MovieList>
       </div>
     );
   }

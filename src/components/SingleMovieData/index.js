@@ -2,24 +2,18 @@ import React, { Component } from 'react';
 import './SingleMovieData.scss'
 class SingleMovieData extends Component {
 
-  // state = {
-  //   dataVal: this.props.data
-  // }
+  //  rating = this.props.data.Ratings.map((item, key) =>
+  //
+  // );
   render() {
-    // console.log(Object.values(this.props.data))
-
-    // let emptyArray = []
-    // emptyArray.push(Object.values(this.props.data))
-
-    // let data = this.state.dataVal
-    // console.log(this.state.dataVal)
-    return (
+  return (
 
       <div className="single-movie">
         <div className="image-block">
           <img src={this.props.data.Poster} className="image-responsive" />
         </div>
         <h1>{this.props.data.Title}</h1>
+        <h2></h2>
       </div>
     );
   }
