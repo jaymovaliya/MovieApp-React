@@ -1,47 +1,52 @@
 import React, { Component } from 'react';
 import './Navigation.scss';
+import { Link } from 'react-router-dom'
 class Navigation extends Component {
 
 
   render() {
     return (
-          <nav id="sidebar-nav">
-              <ul className="sf-menu">
-                <li className="normal-item-pro current-menu-item">
-                  <a href="dashboard-home.html">
-                  <i className="fas fa-tv"></i>
-                    TV Series
-                  </a>
+      <nav id="sidebar-nav">
+        <ul className="sf-menu">
+          <Link to="/tvseries">
+            <li className="normal-item-pro current-menu-item">
+              <i className="fas fa-tv"></i>
+              TV Series
                 </li>
-                <li className="normal-item-pro">
-                  <a href="">
-          		      <i className="fas fa-film"></i>
-                    Movies
-                  </a>
-                </li>
-                <li className="normal-item-pro">
-                  <a href="">
-          		<span className="icon-Movie"></span>
-                    Playlists
-                  </a>
-                </li>
-                <li className="normal-item-pro">
-                  <a href="">
-          		<span className="icon-Movie-Ticket"></span>
-                    New Arrivals
-                  </a>
-                </li>
-                <li className="normal-item-pro">
-                  <a href="l">
-          		<span className="icon-Clock"></span>
-                    Coming Soon
-                  </a>
-                </li>
+          </Link>
+          <Link to="/">
+            <li className="normal-item-pro">
 
-              </ul>
-              <div className="clearfix"></div>
-          </nav>
-        );
-      }
-    }
+              <i className="fas fa-film"></i>
+              Movies
+                </li>
+          </Link>
+          <Link to="/search">
+            <li className="normal-item-pro">
+
+              <span className="icon-Movie"></span>
+              Playlists
+                </li>
+          </Link>
+          <Link to="/new">
+            <li className="normal-item-pro">
+
+              <span className="icon-Movie-Ticket"></span>
+              New Arrivals
+                </li>
+          </Link>
+          <Link to="/upcoming">
+            <li className="normal-item-pro">
+
+              <span className="icon-Clock"></span>
+              Coming Soon
+                </li>
+          </Link>
+
+        </ul>
+        <div className="clearfix"></div>
+      </nav>
+    );
+  }
+}
 export default Navigation;

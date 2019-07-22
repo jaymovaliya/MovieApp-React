@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './SearchBar.scss';
-import MovieResult from '../MovieResult/'
+import MovieResult from '../MovieResult'
 class SearchBar extends Component {
 
   state = {
