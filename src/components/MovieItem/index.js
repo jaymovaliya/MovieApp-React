@@ -5,7 +5,7 @@ class MovieItem extends Component {
 
   render() {
     return this.props.moviedata.map(singleData => (
-      <SingleMovieData data={singleData} />
+      <SingleMovieData key={singleData.imdbID} data={singleData} />
     ));
   }
 }

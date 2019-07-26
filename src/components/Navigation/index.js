@@ -8,43 +8,48 @@ class Navigation extends Component {
     return (
       <nav id="sidebar-nav">
         <ul className="sf-menu">
-          <Link to="/tvseries">
+
             <li className="normal-item-pro current-menu-item">
+              <Link to="/tvseries">
               <i className="fas fa-tv"></i>
               TV Series
+              </Link>
                 </li>
-          </Link>
-          <Link to="/">
-            <li className="normal-item-pro">
 
+
+            <li className="normal-item-pro">
+              <Link to="/">
               <i className="fas fa-film"></i>
-              Movies
+                Movies
+              </Link>
                 </li>
-          </Link>
-          <Link to="/search">
-            <li className="normal-item-pro">
 
+
+            <li className="normal-item-pro">
+              <Link to="/search">
               <span className="icon-Movie"></span>
-              Playlists
+                Playlists
+              </Link>
                 </li>
-          </Link>
-          <Link to="/new">
-            <li className="normal-item-pro">
 
+
+            <li className="normal-item-pro">
+              <Link to="/new">
               <span className="icon-Movie-Ticket"></span>
               New Arrivals
+              </Link>
                 </li>
-          </Link>
-          <Link to="/upcoming">
-            <li className="normal-item-pro">
 
+
+            <li className="normal-item-pro">
+              <Link to="/upcoming">
               <span className="icon-Clock"></span>
               Coming Soon
+              </Link>
                 </li>
-          </Link>
+
 
         </ul>
-        <div className="clearfix"></div>
       </nav>
     );
   }
