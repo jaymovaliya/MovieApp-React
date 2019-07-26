@@ -4,10 +4,11 @@ import MovieList from '../MovieList/index'
 import NewShows from '../NewShows/index'
 import TVSeries from '../TVSeries/index'
 import Upcoming from '../Upcoming/index'
+import MovieDetail from '../MovieDetail/index'
 import App from '../../App'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './Dashboard.scss';
-import data from '../../utils/movieData.json'
+
 // console.log(data)
 class Dashboard extends Component {
 
@@ -22,6 +23,7 @@ class Dashboard extends Component {
           <Route path="/tvseries" component = {TVSeries}></Route>
           <Route path="/new" component = {NewShows}></Route>
           <Route path="/upcoming" component = {Upcoming}></Route>
+          <Route path="/movies/:id" component = {MovieDetail}></Route> {/* :id gives ID into params = props.match.params */}
         </div>
       </Router>
     );
